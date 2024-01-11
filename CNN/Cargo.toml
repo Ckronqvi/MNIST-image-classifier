@@ -1,0 +1,21 @@
+[package]
+name = "cnn"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "cnn"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cnn"
+path = "src/main.rs"
+
+
+[dependencies]
+tch = "0.14.0"
+toml = "0.8.8"
+serde = { version = "1", features = ["derive"] }
+plotters = "0.3.5"
+indicatif = "0.17.6"
+
